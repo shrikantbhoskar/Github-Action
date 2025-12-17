@@ -1,0 +1,30 @@
+name: Simple Message Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  print-message:
+    runs-on: self-hosted
+
+    steps:
+      - name: Print Hello Message
+        run: echo "Hello, this is my first GitHub Actions pipeline!"
+
+      - name: Print Learning Message
+        run: echo "I am learning GitHub Actions step by step."
+
+      - name: Print Completion Message
+        run: echo "Pipeline executed successfully!"
+
+
+
+
+
+
+
+
+
